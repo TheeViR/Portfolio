@@ -61,7 +61,7 @@ function App() {
         target="_blank"
         className="flex fixed bottom-6 right-6 z-50 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white px-4 py-2 rounded-full shadow-xl border border-white hover:scale-110 transition-transform animate-bounce"
       >
-        <Eye className='w-6 h-6'/> <span className='mx-1 text-green-400'>Resume</span>
+        <Eye className='w-6 h-6'/> <span className='mx-1 text-white'>Resume</span>
       </a>
 
       {/* Main Content */}
