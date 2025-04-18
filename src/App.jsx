@@ -8,14 +8,20 @@ function App() {
 
   const skills = ['C++', 'Java', 'ReactJS', 'C',   'DBMS', 'DSA', 'SQL', 'HTML', 'CSS', 'JavaScript', 'Tailwind CSS', 'Spring Boot'];
   const projects = [
-    {
-      name: 'String Analyzer (Full Stack)',
-      description: 'A React + Spring Boot app to perform string operations like palindrome check, camelCase, compression, etc.',
-      link: 'https://github.com/TheeViR/string-analyzer'
+     {
+      name: 'ThinkBin (React App)',
+      description: 'A personal knowledge organizer built with React and Tailwind CSS. Lets users store concepts and spontaneous ideas using a clean card-based layout with a toggle-able input form for clutter-free writing and learning.',
+      link: 'https://think-bin.vercel.app/'
     },
     {
+      name: 'String Analyzer (Full Stack)',
+      description: 'A React + Spring Boot web app that analyzes strings with features like palindrome check, camelCase conversion, character/word count, and more. Built to demonstrate full-stack integration, modular design, and dynamic string processing logic.',
+      link: 'https://github.com/TheeViR/string-analyzer'
+    },
+   
+    {
       name: 'Games Zone Website',
-      description: 'A web-based portal featuring a collection of fun games built with React and styled with Tailwind CSS.',
+      description: 'A fun and interactive web-based portal featuring a collection of mini-games, built using React and styled with Tailwind CSS. Designed with a responsive UI, fast navigation, and playful user experience for casual gaming.',
       link: 'https://games-zone-mocha.vercel.app/'
     }
   ];
@@ -68,7 +74,7 @@ function App() {
       <main className="p-6 space-y-20 max-w-6xl mx-auto my-10">
         {/* Typewriter About */}
         <section>
-          <h2 className="text-4xl font-extrabold text-center text-cyan-400 mb-6 border-r-4 border-cyan-400 whitespace-nowrap overflow-hidden mx-auto w-fit drop-shadow-xl">
+          <h2 className="text-4xl font-extrabold text-center text-cyan-400 mb-6 border-r-4 border-cyan-400 whitespace-nowrap  mx-auto w-fit drop-shadow-xl">
             {text}
           </h2>
           <p className="text-center max-w-3xl mx-auto text-lg text-gray-300 animate-fadein">
@@ -79,7 +85,7 @@ function App() {
         {/* Skills */}
         <section>
           <h2 className="text-3xl font-bold text-cyan-300 mb-6 text-center drop-shadow-lg">Skills</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-items-center">
+          <div className=" grid grid-cols-2 sm:grid-cols-4 gap-4 justify-items-center">
             {skills.map(skill => (
               <div
                 key={skill}
